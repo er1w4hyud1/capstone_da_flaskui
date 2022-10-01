@@ -66,7 +66,7 @@ def index():
         }).rename({'Category':'Total'}, axis=1).sort_values(by='App',ascending=False).head()
     X = cat_order['Total'].values
     Y = cat_order['App'].values
-    my_colors = 'rgbkymc'
+    my_colors = ["r","g","b","k","y","m","c"]
     # bagian ini digunakan untuk membuat kanvas/figure
     fig = plt.figure(figsize=(8,3),dpi=300)
     fig.add_subplot()
